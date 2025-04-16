@@ -51,7 +51,7 @@ Run Virgo commands inside Vim:
 
 Permission denied: 
 ```bash
-chmod +x /.vim/bundle/virgo/bin/virgo 
+chmod +x .vim/bundle/virgo/bin/virgo 
 ```
 
 ### **Advanced Features (Planned)**  
