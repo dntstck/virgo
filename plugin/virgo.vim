@@ -1,4 +1,5 @@
 command! -nargs=* Virgo call VirgoRun(<f-args>)
+cabbrev virgo Virgo
 
 function! VirgoRun(...) abort
     let args = a:000 
