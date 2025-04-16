@@ -1,18 +1,17 @@
-
 command! -nargs=* Virgo call VirgoRun(<f-args>)
 cabbrev virgo Virgo
 
+" Define the absolute path to the Virgo binary
+let s:virgo_bin = expand("~/.vim/bundle/virgo/bin/virgo")
 
-let s:virgo_bin = expand("~/.vim/bundle/virgo/bin")
-" absolute path
-
+" Function to run Virgo commands
 function! VirgoRun(...) abort
-    let args = join(a:000, " ")
     if len(a:000) < 2
         echo "Usage: :virgo <action> <crate>"
         return
     endif
 
-    let output = system(s:virgo_bin . " " . args)
+    let args = join(a:000, " ")
+    let output = system("bash -c '" . s:virgo_bin . " " . args . "'")
     echo output
 endfunction
