@@ -47,6 +47,11 @@ Run Virgo commands inside Vim:
 :virgo add serde       " Add a crate to dependencies
 :virgo remove clap     " Remove a crate from dependencies
 ```
+## 🛠️ Troubleshooting
+
+Permission denied: ```bash
+chmod +x /.vim/bundle/virgo/bin/virgo 
+```
 
 ### **Advanced Features (Planned)**  
 🔹 `:virgo update <crate>` - Update dependencies automatically  
