@@ -3,7 +3,8 @@ command! -nargs=* Virgo call VirgoRun(<f-args>)
 cabbrev virgo Virgo " lowercase alias
 
 
-let s:virgo_bin = expand("~/.local/bin/virgo") "
+let s:virgo_bin = expand("~/.vim/bundle/virgo/bin")
+" absolute path
 
 function! VirgoRun(...) abort
     let args = join(a:000, " ")
