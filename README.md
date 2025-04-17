@@ -46,6 +46,11 @@ Run Virgo commands inside Vim:
 :virgo search colored  " Search for a crate
 :virgo add serde       " Add a crate to dependencies
 :virgo remove clap     " Remove a crate from dependencies
+:virgo update serde    " Update a crate to the latest version
+:virgo rollback serde  " Rollback a crate
+:virgo stats serde     " Shows crate statistics
+:virgo compare serde 1.0.211 1.0.219 " Compare crate versions
+:virgo list serde      " Lists dependencies required for a crate
 ```
 ## 🛠️ Troubleshooting
 
