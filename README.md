@@ -10,6 +10,21 @@ Virgo is currently in pre-release alpha, so you may encounter some bugs or unexp
 ✅ **Lightning Fast** - Powered by Rust for performance and efficiency.  
 ✅ **Zero Setup** - No need to manually edit `Cargo.toml`, Virgo handles it for you.  
 
+## 🛠️ Usage  
+
+### **Basic Commands**  
+Run Virgo commands inside Vim:  
+```vim
+:virgo search colored  " Search for a crate
+:virgo add serde       " Add a crate to dependencies
+:virgo remove clap     " Remove a crate from dependencies
+:virgo update serde    " Update a crate to the latest version
+:virgo rollback serde  " Rollback a crate
+:virgo stats serde     " Shows crate statistics
+:virgo compare serde 1.0.211 1.0.219 " Compare crate versions
+:virgo list serde      " Lists dependencies required for a crate
+```
+
 ## 🚀 Installation  
 
 ### **With vim-plug**  
@@ -38,20 +53,6 @@ Clone the repo into your Vim bundle directory:
 git clone https://github.com/your-username/virgo-vim ~/.vim/bundle/virgo-vim
 ```
 
-## 🛠️ Usage  
-
-### **Basic Commands**  
-Run Virgo commands inside Vim:  
-```vim
-:virgo search colored  " Search for a crate
-:virgo add serde       " Add a crate to dependencies
-:virgo remove clap     " Remove a crate from dependencies
-:virgo update serde    " Update a crate to the latest version
-:virgo rollback serde  " Rollback a crate
-:virgo stats serde     " Shows crate statistics
-:virgo compare serde 1.0.211 1.0.219 " Compare crate versions
-:virgo list serde      " Lists dependencies required for a crate
-```
 ## 🛠️ Troubleshooting
 
 Permission denied: 
