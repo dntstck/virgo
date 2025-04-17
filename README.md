@@ -22,7 +22,11 @@ Run Virgo commands inside Vim:
 :virgo rollback serde  " Rollback a crate
 :virgo stats serde     " Shows crate statistics
 :virgo compare serde 1.0.211 1.0.219 " Compare crate versions
-:virgo list serde      " Lists dependencies required for a crate
+:virgo versions serde      " Lists versions available for a crate
+:virgo installed       " Displays currently installed crates
+:virgo avaiable        " Lists available crates
+:virgo all             " Lists all crates
+:virgo outdated        " Identifies which dependencies need an update
 ```
 
 ## 🚀 Installation  
