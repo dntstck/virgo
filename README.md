@@ -1,16 +1,18 @@
 # **Virgo ♍︎ - A Vim Plugin for Rust Crate Management 🦀**  
 
-**Virgo** (Vi~~m~~ & ~~Ca~~rgo) is a Vim plugin designed to simplify Rust crate management directly from your editor. Search for crates, add dependencies, and clean up your `Cargo.toml` without ever leaving Vim! 
+**Virgo** (Vi~~m~~ & ~~Ca~~rgo) is a **powerful Vim plugin** designed to simplify **Rust crate management** directly from your editor. Search for crates, add dependencies, and clean up your `Cargo.toml` without ever leaving Vim!  
 
-Virgo v1.0 is here! Fully functional and battle-tested, Virgo streamlines Rust crate management directly within Vim. While ongoing refinements continue, all core features are stable and ready for use.
+🚀 **Now officially released as v1.0!** Virgo streamlines crate management with a **lightning-fast, seamless integration**, making Rust development **more efficient than ever**.  
 
 ## 🔥 Features  
-✅ **Crate Management** - Search, add, and remove Rust crates effortlessly.  
-✅ **Seamless Vim Integration** - Works smoothly as a Vim plugin using `:virgo` commands.  
-✅ **Lightning Fast** - Powered by Rust for performance and efficiency.  
-✅ **Zero Setup** - No need to manually edit `Cargo.toml`, Virgo handles it for you.  
+✅ **Crate Management** – Easily search, add, remove, and update Rust crates.  
+✅ **Seamless Vim Integration** – Execute commands effortlessly within Vim using `:virgo` shortcuts.  
+✅ **Optimized Performance** – Built in **Rust** for maximum speed and efficiency.  
+✅ **Zero Manual Edits** – No need to modify `Cargo.toml`; Virgo **handles dependencies for you**.  
+✅ **Rollback Protection** – Revert changes with a single command, **ensuring safer updates**.  
+✅ **Dependency Insights** – Compare versions, check outdated crates, and track package stats.  
 
-## 🛠️ Usage  
+## 🛠️ Getting Started  
 
 ### **Basic Commands**  
 Run Virgo commands inside Vim:  
@@ -24,7 +26,7 @@ Run Virgo commands inside Vim:
 :virgo compare <crate>     " Compares Latest Vs. Stable
 :virgo versions <crate>    " Lists versions available for a crate
 :virgo installed           " Displays currently installed crates
-:virgo avaiable            " Lists available crates
+:virgo available           " Lists available crates
 :virgo all                 " Lists all crates
 :virgo outdated            " Identifies which dependencies need an update
 ```
@@ -57,10 +59,10 @@ Clone the repo into your Vim bundle directory:
 git clone https://github.com/your-username/virgo-vim ~/.vim/bundle/virgo-vim
 ```
 
-## 🛠️ Troubleshooting
+## 🛠️ Troubleshooting  
 
-Permission denied: 
+### **Permission Denied**  
+If you encounter permission issues, run:  
 ```bash
-chmod +x .vim/bundle/virgo/bin/virgo 
+chmod +x ~/.vim/bundle/virgo/bin/virgo 
 ```
-
