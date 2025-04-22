@@ -21,7 +21,7 @@ Run Virgo commands inside Vim:
 :virgo update <crate>    " Update a crate to the latest version
 :virgo rollback <crate>  " Rollback a crate
 :virgo stats <crate>     " Shows crate statistics
-:virgo compare <crate> 1.0.211 1.0.219 " Compare crate versions
+:virgo compare <crate>   " Compares Latest Vs. Stable
 :virgo versions <crate>      " Lists versions available for a crate
 :virgo installed       " Displays currently installed crates
 :virgo avaiable        " Lists available crates
