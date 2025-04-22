@@ -15,18 +15,18 @@ Virgo is currently in pre-release alpha, so you may encounter some bugs or unexp
 ### **Basic Commands**  
 Run Virgo commands inside Vim:  
 ```vim
-:virgo search <crate>  " Search for a crate
-:virgo add <crate>       " Add a crate to dependencies
-:virgo remove <crate>     " Remove a crate from dependencies
-:virgo update <crate>    " Update a crate to the latest version
-:virgo rollback <crate>  " Rollback a crate
-:virgo stats <crate>     " Shows crate statistics
-:virgo compare <crate>   " Compares Latest Vs. Stable
-:virgo versions <crate>      " Lists versions available for a crate
-:virgo installed       " Displays currently installed crates
-:virgo avaiable        " Lists available crates
-:virgo all             " Lists all crates
-:virgo outdated        " Identifies which dependencies need an update
+:virgo search <crate>      " Search for a crate
+:virgo add <crate>         " Add a crate to dependencies
+:virgo remove <crate>      " Remove a crate from dependencies
+:virgo update <crate>      " Update a crate to the latest version
+:virgo rollback <crate>    " Rollback a crate
+:virgo stats <crate>       " Shows crate statistics
+:virgo compare <crate>     " Compares Latest Vs. Stable
+:virgo versions <crate>    " Lists versions available for a crate
+:virgo installed           " Displays currently installed crates
+:virgo avaiable            " Lists available crates
+:virgo all                 " Lists all crates
+:virgo outdated            " Identifies which dependencies need an update
 ```
 
 ## 🚀 Installation  
