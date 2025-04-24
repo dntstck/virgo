@@ -20,14 +20,14 @@ Run Virgo commands inside Vim:
 :virgo search <crate>      " Search for a crate
 :virgo add <crate>         " Add a crate to dependencies
 :virgo remove <crate>      " Remove a crate from dependencies
-:virgo update <crate>      " Update a crate to the latest version
-:virgo rollback <crate>    " Rollback a crate
-:virgo stats <crate>       " Shows crate statistics
-:virgo compare <crate>     " Compares Latest Vs. Stable
+:virgo update <crate>      " Update a crate to <version>, leave blank for latest
+:virgo rollback <crate>    " Rollback a crate to <version>, leave blank for stable
+:virgo depends <crate>     " Check crate dependencies, <version> & <filter_kind> are optional
+:virgo info <crate>        " Display general information regarding a <crate>
+:virgo stats <crate>       " Shows <crate> statistics: downloads, versions, created & last updated
+:virgo compare <crate>     " Compares <crate> Latest Vs. Stable
 :virgo versions <crate>    " Lists versions available for a crate
-:virgo installed           " Displays currently installed crates
-:virgo available           " Lists available crates
-:virgo all                 " Lists all crates
+:virgo all                 " Lists all crates in Cargo.toml
 :virgo outdated            " Identifies which dependencies need an update
 ```
 
