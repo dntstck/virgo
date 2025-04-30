@@ -103,14 +103,9 @@ chmod +x ~/.vim/bundle/virgo/bin/virgo
 ```
 
 **Cargo.lock Conflicts**  
-If `Cargo.lock` is causing merge headaches, consider:
+If `Cargo.lock` is causing headaches, consider:
 - Regenerating it:  
   ```bash
   cargo generate-lockfile
   ```
-- Resolving conflicts during merge:  
-  ```bash
-  git checkout --ours Cargo.lock
-  git add Cargo.lock
-  git commit -m "Resolved Cargo.lock conflicts"
-  ```
+
