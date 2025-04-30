@@ -25,7 +25,8 @@
 
 📌 **Enhanced Features**:  
 - **Stats Output**: Grouped by value with clearer indentation for better readability.  
-- **Depends Command**: Enhanced dependency breakdown with grouping by kind and features.  
+- **Depends Command**: Enhanced dependency breakdown with grouping by kind and features.
+- **Trending Crates**: View trending (most downloaded in 90 days) with `:virgo trending` 
 
 📌 **Polish and Usability**:  
 - Refinements across commands and user feedback integration.  
@@ -54,7 +55,9 @@
 :virgo stats <crate>       " Shows crate statistics: downloads, versions, timeline  
 :virgo depends <crate>     " Check crate dependencies, grouped by kind and features  
 :virgo compare <crate>     " Compare latest vs stable versions  
-:virgo versions <crate>    " List all available versions for a crate  
+:virgo versions <crate>    " List all available versions for a crate
+:virgo trending            " Shows the top 5 crates with the most downloads in 90 days
+
 ```
 
 ---
