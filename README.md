@@ -43,6 +43,12 @@
 :virgo outdated            " Identifies outdated dependencies  
 ```
 
+### **Dependencies**  
+```vim
+:virgo outdated            " Identifies outdated dependencies
+:virgo lockfile            " Inspect lockfile  
+```
+
 ### **Updates & Rollbacks**  
 ```vim
 :virgo update <crate>      " Update a crate to <version>, or leave blank for the latest  
