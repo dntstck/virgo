@@ -7,13 +7,13 @@
 ---
 
 ## 🔥 Features  
-✅ **Crate Management** – Search, add, remove, update, and rollback Rust crates effortlessly.  
-✅ **Seamless Integration** – Streamlined commands executed directly using `:virgo`.
+✅ **Crate Management** – Search, add, remove, update, and rollback Rust crates effortlessly.<br>
+✅ **Seamless Integration** – Streamlined commands executed directly using `:virgo`.<br>
 ✅ **Backup & Restore** – Secure your `Cargo.toml` and roll back changes safely.<br>
-✅ **Visual Feedback** – Enhanced output formatting for better readability and usability.  
-✅ **Dependency Insights** – Examine dependencies, compare versions, and track stats.  
-✅ **Rollback Protection** – Easily revert changes for safer updates and modifications.  
-✅ **Optimized Performance** – Built with **Rust** for exceptional speed and reliability.  
+✅ **Visual Feedback** – Enhanced output formatting for better readability and usability.<br> 
+✅ **Dependency Insights** – Examine dependencies, compare versions, and track stats.<br> 
+✅ **Rollback Protection** – Easily revert changes for safer updates and modifications.<br>
+✅ **Optimized Performance** – Built with **Rust** for exceptional speed and reliability.<br>
 
 ---
 
