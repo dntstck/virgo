@@ -15,6 +15,8 @@
 ✅ **Dependency Insights** – Examine dependencies, compare versions, and track stats.<br> 
 ✅ **Rollback Protection** – Easily revert changes for safer updates and modifications.<br>
 ✅ **Optimized Performance** – Built with **Rust** for exceptional speed and reliability.<br>
+✅ **Compare Versions** – Instantly compare bleeding-edge vs latest stable versions.<br>
+✅ **Crate Info** – Access detailed metadata, dependencies, downloads, and maintainers.<br> 
 
 ---
 
@@ -29,7 +31,9 @@
 - **Stats Output** – Clearer indentation and grouping for better readability.  
 - **Depends Command** – Enhanced breakdown by kind and features.  
 - **Trending Crates** – View the most downloaded crates in the past 90 days using `:virgo trending`.  
-- **Backup & Restore** – Securely back up and restore Cargo.toml with ease.  
+- **Backup & Restore** – Securely back up and restore Cargo.toml with ease.
+- ** Lockfile Inspection ** - Inspect lockfile for precise version tracking
+- ** Documentation ** - Quickly find crate documentation with `:virgo doc` 
 
 ---
 
