@@ -58,6 +58,7 @@
 :virgo trending            " Shows top 5 crates with the most downloads in 90 days  
 ```
 
+### **Backup & Restore**  
 ```vim
 :virgo backup              " Back up the Cargo.toml file  
 :virgo restore             " Restore a backed-up Cargo.toml  
