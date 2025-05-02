@@ -8,9 +8,10 @@
 
 ## 🔥 Features  
 ✅ **Crate Management** – Search, add, remove, update, and rollback Rust crates effortlessly.  
-✅ **Seamless Integration** – Streamlined commands executed directly from Vim using `:virgo`.  
+✅ **Seamless Integration** – Streamlined commands executed directly from Vim using `:virgo`.
+✅ **Backup & Restore** – Secure your `Cargo.toml` and roll back changes safely.
 ✅ **Visual Feedback** – Enhanced output formatting for better readability and usability.  
-✅ **Dependency Insights** – Examine dependencies, compare versions, and track stats like downloads and timelines.  
+✅ **Dependency Insights** – Examine dependencies, compare versions, and track stats.  
 ✅ **Rollback Protection** – Easily revert changes for safer updates and modifications.  
 ✅ **Optimized Performance** – Built with **Rust** for exceptional speed and reliability.  
 
@@ -19,17 +20,15 @@
 ## 🚀 What's New in v1.1.0  
 
 📌 **Bug Fixes**:  
-- Improved `update` and `rollback` functionality for smoother operations.
-- Fixed API issues when calling `depends`  
-- Duplicate crate entry prevention in `Cargo.toml`.  
+- Improved `update` and `rollback` functionality for smoother operations.  
+- Fixed API issues in `depends`.  
+- Prevented duplicate crate entries in `Cargo.toml`.  
 
 📌 **Enhanced Features**:  
-- **Stats Output**: Grouped by value with clearer indentation for better readability.  
-- **Depends Command**: Enhanced dependency breakdown with grouping by kind and features.
-- **Trending Crates**: View trending (most downloaded in 90 days) with `:virgo trending` 
-
-📌 **Polish and Usability**:  
-- Refinements across commands and user feedback integration.  
+- **Stats Output** – Clearer indentation and grouping for better readability.  
+- **Depends Command** – Enhanced breakdown by kind and features.  
+- **Trending Crates** – View the most downloaded crates in the past 90 days using `:virgo trending`.  
+- **Backup & Restore** – Securely back up and restore Cargo.toml with ease.  
 
 ---
 
@@ -55,9 +54,13 @@
 :virgo stats <crate>       " Shows crate statistics: downloads, versions, timeline  
 :virgo depends <crate>     " Check crate dependencies, grouped by kind and features  
 :virgo compare <crate>     " Compare latest vs stable versions  
-:virgo versions <crate>    " List all available versions for a crate
-:virgo trending            " Shows the top 5 crates with the most downloads in 90 days
+:virgo versions <crate>    " List all available versions for a crate  
+:virgo trending            " Shows top 5 crates with the most downloads in 90 days  
+```
 
+```vim
+:virgo backup              " Back up the Cargo.toml file  
+:virgo restore             " Restore a backed-up Cargo.toml  
 ```
 
 ---
