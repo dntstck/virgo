@@ -32,8 +32,8 @@
 - **Depends Command** – Enhanced breakdown by kind and features.  
 - **Trending Crates** – View the most downloaded crates in the past 90 days using `:virgo trending`.  
 - **Backup & Restore** – Securely back up and restore Cargo.toml with ease.
-- ** Lockfile Inspection ** - Inspect lockfile for precise version tracking
-- ** Documentation ** - Quickly find crate documentation with `:virgo doc` 
+- **Lockfile Inspection** - Inspect lockfile for precise version tracking
+- **Documentation** - Quickly find crate documentation with `:virgo doc` 
 
 ---
 
