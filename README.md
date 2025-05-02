@@ -16,7 +16,6 @@
 ✅ **Rollback Protection** – Easily revert changes for safer updates and modifications.<br>
 ✅ **Optimized Performance** – Built with **Rust** for exceptional speed and reliability.<br>
 ✅ **Compare Versions** – Instantly compare bleeding-edge vs latest stable versions.<br>
-✅ **Crate Info** – Access detailed metadata, dependencies, downloads, and maintainers.<br> 
 
 ---
 
