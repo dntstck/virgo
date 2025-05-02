@@ -8,7 +8,7 @@
 
 ## 🔥 Features  
 ✅ **Crate Management** – Search, add, remove, update, and rollback Rust crates effortlessly.  
-✅ **Seamless Integration** – Streamlined commands executed directly from Vim using `:virgo`.
+✅ **Seamless Integration** – Streamlined commands executed directly using `:virgo`.
 ✅ **Backup & Restore** – Secure your `Cargo.toml` and roll back changes safely.
 ✅ **Visual Feedback** – Enhanced output formatting for better readability and usability.  
 ✅ **Dependency Insights** – Examine dependencies, compare versions, and track stats.  
