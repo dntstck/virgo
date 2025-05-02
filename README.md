@@ -8,6 +8,7 @@
 
 ## 🔥 Features  
 ✅ **Crate Management** – Search, add, remove, update, and rollback Rust crates effortlessly.<br>
+✅ **Crate Info** – Discover crate documentation, stats and info directly in Vim.<br>
 ✅ **Seamless Integration** – Streamlined commands executed directly using `:virgo`.<br>
 ✅ **Backup & Restore** – Secure your `Cargo.toml` and roll back changes safely.<br>
 ✅ **Visual Feedback** – Enhanced output formatting for better readability and usability.<br> 
@@ -57,6 +58,7 @@
 
 ### **Insights & Stats**  
 ```vim
+:virgo doc <crate>         " Fetch and display crate documentation  
 :virgo stats <crate>       " Shows crate statistics: downloads, versions, timeline  
 :virgo depends <crate>     " Check crate dependencies, grouped by kind and features  
 :virgo compare <crate>     " Compare latest vs stable versions  
