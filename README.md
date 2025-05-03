@@ -119,8 +119,7 @@ chmod +x ~/.vim/bundle/virgo/bin/virgo
 
 **Cargo.lock Conflicts?**  
 
-- Regenerate it:  
-  ```bash
-  cargo generate-lockfile
-  ```
+```bash
+cargo generate-lockfile
+```
 
