@@ -111,15 +111,15 @@ git clone https://github.com/dntstck/virgo-vim ~/.vim/bundle/virgo-vim
 
 ### **Common Issues**  
 
-**Permission Denied**  
-If you encounter permission issues, run:  
+**Permission Denied?**  
+ 
 ```bash
 chmod +x ~/.vim/bundle/virgo/bin/virgo
 ```
 
-**Cargo.lock Conflicts**  
-If `Cargo.lock` is causing headaches, consider:
-- Regenerating it:  
+**Cargo.lock Conflicts?**  
+
+- Regenerate it:  
   ```bash
   cargo generate-lockfile
   ```
