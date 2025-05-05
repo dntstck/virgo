@@ -45,7 +45,6 @@
 :virgo add <crate>         " Add a crate to dependencies  
 :virgo remove <crate>      " Remove a crate from dependencies  
 :virgo all                 " Lists all crates in Cargo.toml  
-:virgo outdated            " Identifies outdated dependencies  
 ```
 
 ### **Dependencies**  
