@@ -29,11 +29,8 @@ function! VirgoTerminalOutputHandler(channel, msg) abort
         return
     endif
 
-    if type(a:msg) != v:t_list
-        let a:msg = [a:msg]
-    endif
-
-    execute 'echo' join(a:msg, "\n")
+    let msg_list = type(a:msg) == v:t_list ? a:msg : [a:msg]
+    execute 'echo' join(msg_list, "\n")
 endfunction
 
 
