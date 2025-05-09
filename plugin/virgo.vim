@@ -32,9 +32,10 @@ function! VirgoTerminalOutputHandler(channel, msg) abort
     let msg_list = type(a:msg) == v:t_list ? a:msg : [a:msg]
 
     for line in msg_list
-        echom line
+        execute 'echo ' . line
     endfor
 endfunction
+
 
 
 function! VirgoErrorHandler(channel, msg) abort
