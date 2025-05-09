@@ -29,6 +29,10 @@ function! VirgoTerminalOutputHandler(channel, msg) abort
         return
     endif
 
+    execute 'echo' join(type(a:msg) == v:t_list ? a:msg : [a:msg], "\n")
+endfunction
+
+
     echom join(type(a:msg) == v:t_list ? a:msg : [a:msg], "\n")
 endfunction
 
