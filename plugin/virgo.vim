@@ -1,6 +1,3 @@
-command! -nargs=* Virgo call VirgoRun(<f-args>)
-cabbrev virgo Virgo
-
 let s:virgo_bin = expand("~/.vim/bundle/virgo/bin/virgo")
 
 function! VirgoRun(...) abort
@@ -11,10 +8,12 @@ function! VirgoRun(...) abort
 
     let args = trim(join(a:000, " "))
 
-    let job_id = job_start([s:virgo_bin, args], {
+    let job_opts = {
         'out_cb': function('VirgoOutputHandler'),
         'err_cb': function('VirgoErrorHandler')
-    })
+    }
+
+    let job_id = job_start([s:virgo_bin, args], job_opts)
 
     if job_id == 0
         echohl ErrorMsg | echo "Failed to start Virgo process." | echohl None
