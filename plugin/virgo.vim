@@ -23,14 +23,17 @@ function! VirgoRun(...) abort
 endfunction
 
 function! VirgoOutputHandler(channel, msg) abort
-    let output = (type(a:msg) == v:t_list) ? join(a:msg, "\n") : a:msg
-    " Use :redir to capture full output in a scratch buffer
-    redir => virgo_log
-    silent! echo output
-    redir END
-    vnew
-    setlocal buftype=nofile bufhidden=hide noswapfile
-    call setline(1, split(virgo_log, "\n"))
+    if empty(a:msg)
+        return
+    endif
+
+    let win_exists = bufexists('VirgoOutput')
+    if !win_exists
+        execute "silent! botright vnew VirgoOutput"
+        setlocal buftype=nofile bufhidden=hide noswapfile
+    endif
+
+    call append(line('$'), type(a:msg) == v:t_list ? a:msg : [a:msg])
 endfunction
 
 function! VirgoDisplayOutput(msg) abort
