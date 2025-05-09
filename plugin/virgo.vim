@@ -30,13 +30,10 @@ function! VirgoOutputHandler(channel, msg) abort
 
     let win_exists = bufexists('VirgoOutput')
     if !win_exists
-        execute "silent! botright split VirgoOutput"
+        execute "silent! botright vnew VirgoOutput"
+        setlocal buftype=nofile bufhidden=hide noswapfile
     endif
-
-    setlocal buftype=nofile bufhidden=hide noswapfile
-    resize
-
-    call setline('$', type(a:msg) == v:t_list ? a:msg : [a:msg])
+    call append(line('$'), type(a:msg) == v:t_list ? a:msg : [a:msg])
 endfunction
 
 
