@@ -23,12 +23,14 @@ function! VirgoRun(...) abort
 endfunction
 
 function! VirgoOutputHandler(channel, msg) abort
-    if empty(a:msg)
-        return
-    endif
-
     let output = (type(a:msg) == v:t_list) ? join(a:msg, "\n") : a:msg
-    call VirgoDisplayOutput(output)
+    " Use :redir to capture full output in a scratch buffer
+    redir => virgo_log
+    silent! echo output
+    redir END
+    vnew
+    setlocal buftype=nofile bufhidden=hide noswapfile
+    call setline(1, split(virgo_log, "\n"))
 endfunction
 
 function! VirgoDisplayOutput(msg) abort
