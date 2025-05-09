@@ -34,9 +34,7 @@ function! VirgoOutputHandler(channel, msg) abort
         setlocal buftype=nofile bufhidden=hide noswapfile
     endif
     autocmd BufEnter VirgoOutput setlocal syntax=off
-    execute "buffer VirgoOutput"
-    call append('$', type(a:msg) == v:t_list ? a:msg : [a:msg])
-    normal! G
+    call append(line('$'), type(a:msg) == v:t_list ? a:msg : [a:msg])
 endfunction
 
 
