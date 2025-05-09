@@ -17,15 +17,23 @@ function! VirgoRun(...) abort
 
     let job_id = job_start([s:virgo_bin, args], job_opts)
 
-    if job_id == 0
+    if type(job_id) != v:t_job
         echohl ErrorMsg | echo "Failed to start Virgo process." | echohl None
     endif
 endfunction
 
 function! VirgoOutputHandler(channel, msg) abort
-    echo msg
+    if type(msg) == v:t_list
+        echo join(msg, "\n")
+    else
+        echo msg
+    endif
 endfunction
 
 function! VirgoErrorHandler(channel, msg) abort
-    echohl ErrorMsg | echo msg | echohl None
+    if type(msg) == v:t_list
+        echohl ErrorMsg | echo join(msg, "\n") | echohl None
+    else
+        echohl ErrorMsg | echo msg | echohl None
+    endif
 endfunction
