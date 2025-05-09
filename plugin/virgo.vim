@@ -34,7 +34,6 @@ function! VirgoTerminalOutputHandler(channel, msg) abort
 
     for line in safe_msg_list
         call execute("echo '" . line . "'")
-        redraw!
     endfor
 endfunction
 
