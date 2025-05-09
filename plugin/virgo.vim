@@ -24,11 +24,12 @@ endfunction
 
 function! VirgoOutputHandler(channel, msg) abort
     if type(a:msg) == v:t_list
-        echo join(a:msg, "\n")
+        echohl None | redraw | echo join(a:msg, "\n")
     else
-        echo a:msg
+        echohl None | echo a:msg
     endif
 endfunction
+
 
 function! VirgoErrorHandler(channel, msg) abort
     if !empty(a:msg)
