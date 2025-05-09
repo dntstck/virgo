@@ -1,3 +1,6 @@
+command! -nargs=* Virgo call VirgoRun(<f-args>)
+cabbrev virgo Virgo
+
 let s:virgo_bin = expand("~/.vim/bundle/virgo/bin/virgo")
 
 function! VirgoRun(...) abort
