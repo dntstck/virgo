@@ -7,8 +7,8 @@ function! VirgoRun(...) abort
     let args = trim(join(a:000, " "))
 
     let job_id = job_start([s:virgo_bin, args], {
-        'out_cb': {channel, msg -> echo msg},
-        'err_cb': {channel, msg -> echohl ErrorMsg | echo msg | echohl None}
+        'out_cb': function('VirgoOutputHandler'),
+        'err_cb': function('VirgoErrorHandler')
     })
 
     if job_id == 0
@@ -16,3 +16,10 @@ function! VirgoRun(...) abort
     endif
 endfunction
 
+function! VirgoOutputHandler(channel, msg)
+    echo msg
+endfunction
+
+function! VirgoErrorHandler(channel, msg)
+    echohl ErrorMsg | echo msg | echohl None
+endfunction
