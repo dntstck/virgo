@@ -32,13 +32,10 @@ function! VirgoTerminalOutputHandler(channel, msg) abort
     let msg_list = type(a:msg) == v:t_list ? a:msg : [a:msg]
     let safe_msg_list = map(msg_list, {_, v -> substitute(v, '["]', '\\&', 'g')})
 
-    for line in safe_msg_list
-        redraw
-        echo line
-    endfor
+    let output_str = join(safe_msg_list, "\n")
+
+    execute "echo '" . output_str . "'"
 endfunction
-
-
 
 
 function! VirgoErrorHandler(channel, msg) abort
