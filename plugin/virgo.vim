@@ -1,3 +1,5 @@
+let s:virgo_bin = expand("~/.vim/bundle/virgo/bin/virgo")
+
 function! VirgoRun(...) abort
     if empty(a:000)
         echohl ErrorMsg | echo "Usage: :virgo <action> [crate]" | echohl None
