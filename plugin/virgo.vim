@@ -30,10 +30,10 @@ function! VirgoTerminalOutputHandler(channel, msg) abort
     endif
 
     let msg_list = type(a:msg) == v:t_list ? a:msg : [a:msg]
-    let safe_msg_list = map(msg_list, {_, v -> substitute(v, '["]', '\\&', 'g')})
+    let safe_msg_list = map(msg_list, {_, v -> substitute(v, '[=]', '\\&', 'g')})
 
     for line in safe_msg_list
-        call execute("echo '" . line . "'")
+        execute "echo '" . line . "' | echo ''"
     endfor
 endfunction
 
