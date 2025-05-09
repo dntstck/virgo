@@ -16,10 +16,10 @@ function! VirgoRun(...) abort
     endif
 endfunction
 
-function! VirgoOutputHandler(channel, msg)
+function! VirgoOutputHandler(channel, msg) abort
     echo msg
 endfunction
 
-function! VirgoErrorHandler(channel, msg)
+function! VirgoErrorHandler(channel, msg) abort
     echohl ErrorMsg | echo msg | echohl None
 endfunction
