@@ -24,13 +24,12 @@ endfunction
 
 function! VirgoOutputHandler(channel, msg) abort
     if type(a:msg) == v:t_list
-        for line in a:msg
-            echom line
-        endfor
+        call map(a:msg, 'echom v:val')
     else
         echom a:msg
     endif
 endfunction
+
 
 function! VirgoErrorHandler(channel, msg) abort
     if !empty(a:msg)
