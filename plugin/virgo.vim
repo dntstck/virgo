@@ -1,4 +1,4 @@
-command! -nargs=* Virgo call VirgoRun(<f-args>) 
+command! -nargs=* Virgo call VirgoRun(<f-args>)
 cabbrev virgo Virgo
 
 let s:virgo_bin = expand("~/.vim/bundle/virgo/bin/virgo")
@@ -23,17 +23,17 @@ function! VirgoRun(...) abort
 endfunction
 
 function! VirgoOutputHandler(channel, msg) abort
-    if type(msg) == v:t_list
-        echo join(msg, "\n")
+    if type(a:msg) == v:t_list
+        echo join(a:msg, "\n")
     else
-        echo msg
+        echo a:msg
     endif
 endfunction
 
 function! VirgoErrorHandler(channel, msg) abort
-    if type(msg) == v:t_list
-        echohl ErrorMsg | echo join(msg, "\n") | echohl None
+    if !empty(a:msg)
+        echohl ErrorMsg | echo a:msg | echohl None
     else
-        echohl ErrorMsg | echo msg | echohl None
+        echohl ErrorMsg | echo "Unknown error occurred." | echohl None
     endif
 endfunction
