@@ -1,4 +1,4 @@
-command! -nargs=* Virgo call VirgoRun(<f-args>)
+command! -nargs=* Virgo call VirgoRun(<f-args>) 
 cabbrev virgo Virgo
 
 let s:virgo_bin = expand("~/.vim/bundle/virgo/bin/virgo")
@@ -11,10 +11,9 @@ function! VirgoRun(...) abort
 
     let args = trim(join(a:000, " "))
 
-    let job_opts = {
-        'out_cb': function('VirgoOutputHandler'),
-        'err_cb': function('VirgoErrorHandler')
-    }
+    let job_opts = {}
+    let job_opts['out_cb'] = function('VirgoOutputHandler')
+    let job_opts['err_cb'] = function('VirgoErrorHandler')
 
     let job_id = job_start([s:virgo_bin, args], job_opts)
 
