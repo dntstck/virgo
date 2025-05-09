@@ -33,11 +33,10 @@ function! VirgoTerminalOutputHandler(channel, msg) abort
     let safe_msg_list = map(msg_list, {_, v -> substitute(v, '["]', '\\&', 'g')})
 
     for line in safe_msg_list
-        call execute("echon '" . line . "' . \"\\n\"")
-        call execute('redraw')
+        call execute("echo '" . line . "'")
+        redraw!
     endfor
 endfunction
-
 
 function! VirgoErrorHandler(channel, msg) abort
     if !empty(a:msg)
