@@ -11,9 +11,11 @@ function! VirgoRun(...) abort
 
     let args = [s:virgo_bin] + a:000
 
-    let job_opts = {}
-    let job_opts['out_cb'] = function('VirgoOutputHandler')
-    let job_opts['err_cb'] = function('VirgoErrorHandler')
+    let job_opts = {
+        \ 'pty': 1,
+        \ 'out_cb': function('VirgoTerminalOutputHandler'),
+        \ 'err_cb': function('VirgoErrorHandler')
+    \ }
 
     let job_id = job_start(args, job_opts)
 
@@ -22,25 +24,19 @@ function! VirgoRun(...) abort
     endif
 endfunction
 
-
-function! VirgoOutputHandler(channel, msg) abort
+function! VirgoTerminalOutputHandler(channel, msg) abort
     if empty(a:msg)
         return
     endif
 
-    let win_exists = bufexists('VirgoOutput')
-    if !win_exists
-        execute "silent! belowright split VirgoOutput"
-        setlocal buftype=nofile bufhidden=hide noswapfile
-    endif
-    autocmd BufEnter VirgoOutput setlocal syntax=off
-    call append(line('$'), type(a:msg) == v:t_list ? a:msg : [a:msg])
+    echom join(type(a:msg) == v:t_list ? a:msg : [a:msg], "\n")
 endfunction
-
 
 function! VirgoErrorHandler(channel, msg) abort
     if !empty(a:msg)
-        echohl ErrorMsg | echo a:msg | echohl None
+        echohl ErrorMsg
+        echom join(type(a:msg) == v:t_list ? a:msg : [a:msg], "\n")
+        echohl None
     else
         echohl ErrorMsg | echo "Unknown error occurred." | echohl None
     endif
