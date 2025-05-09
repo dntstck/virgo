@@ -23,13 +23,15 @@ function! VirgoRun(...) abort
 endfunction
 
 function! VirgoOutputHandler(channel, msg) abort
-    if type(a:msg) == v:t_list
-        call map(a:msg, 'echom v:val')
-    else
-        echom a:msg
-    endif
+    let output = (type(a:msg) == v:t_list) ? join(a:msg, "\n") : a:msg
+    call VirgoDisplayOutput(output)
 endfunction
 
+function! VirgoDisplayOutput(msg) abort
+    execute "new VirgoOutput"
+    setlocal buftype=nofile bufhidden=hide noswapfile
+    call setline(1, split(a:msg, "\n"))
+endfunction
 
 function! VirgoErrorHandler(channel, msg) abort
     if !empty(a:msg)
