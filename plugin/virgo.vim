@@ -30,19 +30,13 @@ function! VirgoOutputHandler(channel, msg) abort
 
     let win_exists = bufexists('VirgoOutput')
     if !win_exists
-    execute "silent! botright split VirgoOutput"
-    setlocal buftype=nofile bufhidden=hide noswapfile
-    resize
+        execute "silent! botright split VirgoOutput"
     endif
 
-    call append(line('$'), type(a:msg) == v:t_list ? a:msg : [a:msg])
-endfunction
-
-function! VirgoDisplayOutput(msg) abort
-    " Open a new scratch buffer for Virgo output
-    execute "silent! botright vnew VirgoOutput"
     setlocal buftype=nofile bufhidden=hide noswapfile
-    call setline(1, split(a:msg, "\n"))
+    resize
+
+    call setline('$', type(a:msg) == v:t_list ? a:msg : [a:msg])
 endfunction
 
 
