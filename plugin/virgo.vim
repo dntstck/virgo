@@ -33,7 +33,9 @@ function! VirgoOutputHandler(channel, msg) abort
         execute "silent! belowright split VirgoOutput"
         setlocal buftype=nofile bufhidden=hide noswapfile
     endif
-    call append(line('$'), type(a:msg) == v:t_list ? a:msg : [a:msg])
+    autocmd BufEnter VirgoOutput setlocal syntax=off
+    call setline('$', type(a:msg) == v:t_list ? a:msg : [a:msg])
+    normal! G
 endfunction
 
 
