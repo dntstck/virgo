@@ -55,13 +55,13 @@
 
 ### **Updates & Rollbacks**  
 ```vim
-:virgo update <crate>      " Update a crate to <version>, or leave blank for the latest  
-:virgo rollback <crate>    " Rollback a crate to <version>, or leave blank for stable  
+:virgo update <crate>      " Update a crate to <version> 
+:virgo rollback <crate>    " Rollback a crate to <version> 
 ```
 
 ### **Insights & Stats**  
 ```vim
-:virgo doc <crate>         " Fetch and display crate documentation  
+:virgo doc <crate>         " Open crate documentation in external browser
 :virgo stats <crate>       " Shows crate statistics: downloads, versions, timeline  
 :virgo depends <crate>     " Check crate dependencies, grouped by kind and features  
 :virgo compare <crate>     " Compare latest vs stable versions  
@@ -80,7 +80,8 @@
 ## 🚀 Installation  
 
 ### **With vim-plug**  
-Add this to your Vim configuration (`~/.vimrc` or `~/.config/nvim/init.vim`):  
+
+Add this to your Vim configuration (`~/.vimrc` or `~/.config/nvim/init.vim`):
 ```vim
 Plug 'dntstck/virgo'
 ```
@@ -90,6 +91,7 @@ Then run:
 ```
 
 ### **With Vundle**  
+
 Add this to your `.vimrc`:  
 ```vim
 Plugin 'dntstck/virgo'
@@ -100,6 +102,7 @@ Then install it with:
 ```
 
 ### **With Pathogen**  
+
 Clone the repo into your Vim bundle directory:  
 ```bash
 git clone https://github.com/dntstck/virgo-vim ~/.vim/bundle/virgo-vim
