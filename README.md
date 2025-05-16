@@ -8,19 +8,19 @@
 ---
 
 ## 🔥 Features  
-✅ **Crate Management** – Search, add, remove, update, and rollback Rust crates effortlessly.<br>
-✅ **Crate Info** – Discover documentation, stats, and detailed crate info directly in Vim.<br>
-✅ **Seamless Integration** – Execute streamlined commands instantly using `:virgo`.<br>
-✅ **Backup & Restore** – Secure your `Cargo.toml`, rollback safely, and prevent accidental changes.<br>
-✅ **Visual Feedback** – Enhanced output formatting for structured readability and usability.<br> 
-✅ **Dependency Insights** – Examine dependencies, visualize trees, track updates, and filter changelogs.<br>  
-✅ **Breaking Change Detection** – Analyze `Cargo.toml` for breaking updates before they happen.<br>  
-✅ **Rollback Protection** – Easily revert changes, maintain stability, and prevent unintended updates.<br>
-✅ **Optimized Performance** – Built in **Rust** for blazing-fast execution and efficiency.<br>
-✅ **Compare Versions** – Instantly compare bleeding-edge vs latest stable versions.<br>
-✅ **Docs Lookup** – Fetch crate documentation and examples directly from **docs.rs**.<br>
-✅ **Standalone Outdated Check** – Identify outdated dependencies **without relying on Cargo**.<br>
-✅ **Complete Cargo.toml Management** – Health checks, edits, structured initialization, and validation.<br>
+✅ **Crate Management** – Search, add, remove, update, and rollback Rust crates effortlessly.
+✅ **Crate Info** – Discover documentation, stats, and detailed crate info directly in Vim.
+✅ **Seamless Integration** – Execute streamlined commands instantly using `:virgo`.
+✅ **Backup & Restore** – Secure your `Cargo.toml`, rollback safely, and prevent accidental changes.
+✅ **Visual Feedback** – Enhanced output formatting for structured readability and usability.
+✅ **Dependency Insights** – Examine dependencies, visualize trees, track updates, and filter changelogs. 
+✅ **Breaking Change Detection** – Analyze `Cargo.toml` for breaking updates before they happen. 
+✅ **Rollback Protection** – Easily revert changes, maintain stability, and prevent unintended updates.
+✅ **Optimized Performance** – Built in **Rust** for blazing-fast execution and efficiency.
+✅ **Compare Versions** – Instantly compare bleeding-edge vs latest stable versions.
+✅ **Docs Lookup** – Fetch crate documentation and examples directly from **docs.rs**.
+✅ **Standalone Outdated Check** – Identify outdated dependencies **without relying on Cargo**.
+✅ **Complete Cargo.toml Management** – Health checks, edits, structured initialization, and validation.
 
 ---
 
