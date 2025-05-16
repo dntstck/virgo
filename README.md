@@ -25,12 +25,12 @@
 
 ## 🚀 What's New in v1.3.0  
 
- **Auto-select latest stable** – `:virgo add <crate>` defaults to the latest stable version 
- **Extended `:virgo docs`** – Now grabs examples and usage snippets from docs.rs 
- **Added flags `:virgo docs -ext`** – open crate documentation directly in your browser using -ext
- **Standalone `outdated` command** – No longer relies on Cargo, making it more reliable  
- **Smarter `update_crate`** – Handles crates with `{ features: [...] }` properly  
- **Enhanced changelog filtering** – Supports major, minor, patch, and version-based filtering  
+ **Auto-select latest stable** – `:virgo add <crate>` defaults to the latest stable version <br>
+ **Extended `:virgo docs`** – Now grabs examples and usage snippets from docs.rs <br>
+ **Added flags `:virgo docs -ext`** – open crate documentation directly in your browser using -ext<br>
+ **Standalone `outdated` command** – No longer relies on Cargo, making it more reliable  <br>
+ **Smarter `update_crate`** – Handles crates with `{ features: [...] }` properly  <br>
+ **Enhanced changelog filtering** – Supports major, minor, patch, and version-based filtering  <br>
 
 ---
 
