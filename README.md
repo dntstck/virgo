@@ -1,9 +1,9 @@
-# **Virgo ♍︎ - A Vim Plugin for Rust Crate Management 🦀**
+# **Virgo ♍︎ - Autonomous Rust Crate Management for Vim 🦀**
 
 **Virgo** (Vi~~m~~ & ~~Ca~~rgo) is a **powerful Vim plugin** designed to simplify **Rust crate management** directly from your editor. Search for crates, manage Cargo.toml, check dependencies,
  manage your lockfile, discover trending crates and explore stats—all without leaving Vim!  
 
-🚀 **Currently at v1.2.0!** Virgo continues to evolve, incorporating bug fixes, usability enhancements, and polished features to redefine Rust development.  
+🚀 **Currently at v1.3.0!** Virgo continues to evolve, incorporating bug fixes, usability enhancements, and polished features to redefine Rust development.  
 
 ---
 
@@ -20,59 +20,66 @@
 
 ---
 
-## 🚀 What's New in v1.2.0  
+## 🚀 What's New in v1.3.0  
 
-📌 **Bug Fixes**:  
-- Improved `update` and `rollback` functionality for smoother operations.  
-- Fixed API issues in `depends`.  
-- Prevented duplicate crate entries in `Cargo.toml`.  
-
-📌 **Enhanced Features**:  
-- **Stats Output** – Clearer indentation and grouping for better readability.  
-- **Depends Command** – Enhanced breakdown by kind and features.  
-- **Trending Crates** – View the most downloaded crates in the past 90 days using `:virgo trending`.  
-- **Backup & Restore** – Securely back up and restore Cargo.toml with ease.
-- **Lockfile Inspection** - Inspect lockfile for precise version tracking
-- **Documentation** - Quickly find crate documentation with `:virgo doc` 
+ **Auto-select latest stable** – `:virgo add <crate>` defaults to the latest stable version 
+ **Extended `:virgo docs`** – Now grabs examples and usage snippets from docs.rs 
+ **Added flags `:virgo docs -ext`** – open crate documentation directly in your browser using -ext
+ **Standalone `outdated` command** – No longer relies on Cargo, making it more reliable  
+ **Smarter `update_crate`** – Handles crates with `{ features: [...] }` properly  
+ **Enhanced changelog filtering** – Supports major, minor, patch, and version-based filtering  
 
 ---
 
 ## 🛠️ Commands Overview  
 
-### **Crate Management**  
+### 🔍 Search & Information  
+
 ```vim
-:virgo search <crate>      " Search for a crate  
-:virgo add <crate>         " Add a crate to dependencies  
-:virgo remove <crate>      " Remove a crate from dependencies  
-:virgo all                 " Lists all crates in Cargo.toml  
+:virgo search    " Search for a crate on crates.io  
+:virgo stats     " Display the stats of a crate  
+:virgo info      " Displays detailed info of a crate  
+:virgo versions  " Displays all available versions of a crate  
+:virgo trending  " Displays trending crates  
 ```
 
-### **Dependencies**  
+### 🛠 Dependency Management  
+
 ```vim
-:virgo outdated            " Identifies outdated dependencies
-:virgo lockfile            " Inspect lockfile  
+:virgo add       " Adds selected crate  
+:virgo remove    " Removes selected crate  
+:virgo update    " Updates selected dependency  
+:virgo rollback  " Rolls back to a previous version  
+:virgo compare   " Compares bleeding-edge with latest stable version of a selected crate  
+:virgo depends   " Displays all the dependencies of a selected crate  
 ```
 
-### **Updates & Rollbacks**  
+### 📜 Project & Cargo.toml Handling 
+
 ```vim
-:virgo update <crate>      " Update a crate to <version> 
-:virgo rollback <crate>    " Rollback a crate to <version> 
+:virgo all       " Displays all installed dependencies in Cargo.toml  
+:virgo health    " Checks current Cargo.toml for overall health  
+:virgo breaking  " Analyzes Cargo.toml for breaking changes  
+:virgo lockfile  " Inspects Cargo.lock for precise version tracking  
+:virgo changelog " View changelog for a selected crate (Filter by major, minor, patch, since x.x.x & more)  
+:virgo tree      " Display a tree of dependencies for a crate  
+:virgo init      " Creates a basic Cargo.toml in the current dir  
+:virgo edit      " Edit Name, Version, and Edition in the current Cargo.toml   
 ```
 
-### **Insights & Stats**  
-```vim
-:virgo doc <crate>         " Open crate documentation in external browser
-:virgo stats <crate>       " Shows crate statistics: downloads, versions, timeline  
-:virgo depends <crate>     " Check crate dependencies, grouped by kind and features  
-:virgo compare <crate>     " Compare latest vs stable versions  
-:virgo versions <crate>    " List all available versions for a crate  
-:virgo trending            " Shows top 5 crates with the most downloads in 90 days  
+### 🔄 Backup & Restore  
+
+``` vim
+:virgo backup    " Backup Cargo.toml  
+:virgo restore   " Restore Cargo.toml from latest backup  
 ```
 
-### **Backup & Restore**  
+### 📚 Documentation & Help  
+
 ```vim
-:virgo backup              " Back up the Cargo.toml file  
-:virgo restore             " Restore a backed-up Cargo.toml  
+:virgo docs "View documentation for a selected crate, use  -ext  or  -e  to open in docs.rs  
+:virgo help "Print this message or the help of the given subcommand(s)  
+:virgo about "Display information about Virgo  
 ```
 
 ---
