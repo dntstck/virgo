@@ -81,7 +81,7 @@
 ### 📚 Documentation & Help  
 
 ```vim
-:virgo docs "View documentation for a selected crate, use  -ext  or  -e  to open in docs.rs  
+:virgo docs "View documentation for a selected crate, use -o to open in docs.rs, or -e to view examples in vim.
 :virgo help "Print this message or the help of the given subcommand(s)  
 :virgo about "Display information about Virgo  
 ```
