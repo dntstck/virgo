@@ -1,19 +1,34 @@
+
+
 # **Virgo ♍︎ - Autonomous Rust Crate Management for Vim 🦀**
 
 **Virgo** (Vi~~m~~ & ~~Ca~~rgo) is a **powerful Vim plugin** designed to simplify **Rust crate management** directly from your editor. Search for crates, manage Cargo.toml, check dependencies,
- manage your lockfile, discover trending crates and explore stats—all without leaving Vim!  
+ manage your lockfile, discover trending crates and explore stats—all without leaving Vim!
 
-🚀 **Currently at v1.3.4!** Virgo continues to evolve, incorporating bug fixes, usability enhancements, and polished features to redefine Rust development.  
+🚀 **Currently at v1.3.3!** Virgo continues to evolve, incorporating bug fixes, usability enhancements, and polished features to redefine Rust development.
 
 ---
-## 🔥 Features  
+
+## 📖 Table of Contents
+- [🔥 Features](#features)
+- [🚀 What's New](#whats-new)
+- [📸 Usage Examples](#usage-examples)
+- [🛠️ Commands Overview](#commands-overview)
+- [🚀 Installation](#installation)
+- [🛠️ Troubleshooting](#troubleshooting)
+
+---
+## <a id="features"></a> 🔥 Features
 ✅ **Crate Management** – Search, add, remove, update, and rollback Rust crates effortlessly.<br>
+✅ **Native Vim Compatibility** – Seamlessly integrates with Vim using intuitive `:virgo` commands.<br>
+✅ **Blazing Fast Performance** – Built in Rust for maximum speed and efficiency.<br>
+✅ **Fully Automated** – No manual edits needed; Virgo takes care of `Cargo.toml` for you.<br>
 ✅ **Crate Info** – Discover documentation, stats, and detailed crate info directly in Vim.<br>
 ✅ **Seamless Integration** – Execute streamlined commands instantly using `:virgo`.<br>
 ✅ **Backup & Restore** – Secure your `Cargo.toml`, rollback safely, and prevent accidental changes.<br>
 ✅ **Visual Feedback** – Enhanced output formatting for structured readability and usability.<br> 
-✅ **Dependency Insights** – Examine dependencies, visualize trees, track updates, and filter changelogs.<br>  
-✅ **Breaking Changes** – Analyze `Cargo.toml` for breaking updates before they happen.<br>  
+✅ **Dependency Insights** – Examine dependencies, visualize trees, track updates, and filter changelogs.<br>
+✅ **Breaking Changes** – Analyze `Cargo.toml` for breaking updates before they happen.<br>
 ✅ **Rollback Protection** – Easily revert changes, maintain stability, and prevent unintended updates.<br>
 ✅ **Optimized Performance** – Built in **Rust** for blazing-fast execution and efficiency.<br>
 ✅ **Compare Versions** – Instantly compare bleeding-edge vs latest stable versions.<br>
@@ -23,115 +38,216 @@
 
 ---
 
-## 🚀 What's New in v1.3.4  
+## <a id="whats-new"></a>🚀 What's New - v1.3.4
 
  **Auto-select latest stable** – `:virgo add <crate>` defaults to the latest stable version <br>
  **Extended `:virgo docs`** – Now grabs examples and usage snippets from docs.rs <br>
- **Added flags `:virgo docs -e`** – view examples from doc.rs using -e<br>
+ **Added flags `:virgo docs -e`** – view crate examples in the gutter using -e<br> 
  **Added flags `:virgo docs -o`** – open crate documentation directly in your browser using -o<br>
- **Standalone `outdated` command** – No longer relies on Cargo, making it more reliable  <br>
- **Smarter `update_crate`** – Handles crates with `{ features: [...] }` properly  <br>
- **Enhanced changelog filtering** – Supports major, minor, patch, and version-based filtering  <br>
+ **Standalone `outdated` command** – No longer relies on Cargo, making it more reliable<br>
+ **Smarter `updatecrate`** – Handles crates with `{ features: [...] }` properly<br>
+ **Enhanced changelog filtering** – Supports major, minor, patch, and version-based filtering<br>
 
 ---
 
-## 🛠️ Commands Overview  
+## <a id="usage-examples"></a>📸 Usage Examples
 
-### 🔍 Search & Information  
+### 🛠 Adding a Crate
+Instantly add crates without leaving Vim.
+![Virgo Add](docs/img/virgo-add.png)
+
+### 🔍 Viewing Installed Crates
+Displays all currently installed dependencies in Cargo.toml.
+![Virgo All](docs/img/virgo-all.png)
+
+### 🔄 Creating a Backup
+Secure your Cargo.toml before making changes.
+![Virgo Backup](docs/img/virgo-backup.png)
+
+### ⚠️ Detecting Breaking Changes
+Analyze Cargo.toml for potential breaking updates.
+![Virgo Breaking](docs/img/virgo-breaking.png)
+
+### 📜 Viewing Changelog Entries
+Filter changelogs by major, minor, patch, or version.
+![Virgo Changelog](docs/img/virgo-changelog.png)
+
+### 🔍 Comparing Versions
+Instantly compare bleeding-edge with latest stable.
+![Virgo Compare](docs/img/virgo-compare.png)
+
+### 🔗 Inspecting Dependencies
+Display dependencies of a selected crate.
+![Virgo Depends](docs/img/virgo-depends.png)
+
+### 📚 Viewing Documentation & Examples
+Quickly fetch crate documentation and code examples.
+![Virgo Docs](docs/img/virgo-docs.png)
+
+### 🔎 Viewing Examples
+Displays example snippets for a selected crate.
+![Virgo Docs - Examples](docs/img/virgo-docs-ex.png)
+
+### 🌐 Opening Docs.rs
+Open crate documentation directly in a browser.
+![Virgo Docs - Open](docs/img/virgo-docs-o.png)
+
+### ✏️ Editing Cargo.toml
+Modify Name, Version, and Edition in Cargo.toml.
+![Virgo Edit](docs/img/virgo-edit.png)
+
+### ✅ Checking Cargo.toml Health
+Verify the integrity and structure of Cargo.toml.
+![Virgo Health](docs/img/virgo-health.png)
+
+### ℹ️ Viewing Crate Info
+Display detailed information about a crate.
+![Virgo Info](docs/img/virgo-info.png)
+
+### 🔑 Inspecting Cargo.lock
+Track precise crate versions in Cargo.lock.
+![Virgo Lockfile](docs/img/virgo-lockfile.png)
+
+### ⚠️ Checking Outdated Dependencies
+Identify outdated dependencies without Cargo.
+![Virgo Outdated](docs/img/virgo-outdated.png)
+
+### ❌ Removing Crates
+Easily remove a selected crate.
+![Virgo Remove](docs/img/virgo-remove.png)
+
+### 🔄 Restoring a Backup
+Revert Cargo.toml to a previous backup.
+![Virgo Restore](docs/img/virgo-restore.png)
+
+### ⏪ Rolling Back Versions
+Roll back crates to a previous version.
+![Virgo Rollback](docs/img/virgo-rollback.png)
+
+### 🔎 Searching for Crates
+Find dependencies with blazing-fast lookup.
+![Virgo Search](docs/img/virgo-search.png)
+
+### 📊 Viewing Crate Stats
+Display download counts, ratings, and more.
+![Virgo Stats](docs/img/virgo-stats.png)
+
+### 🌳 Viewing Dependency Tree
+Display a structured dependency tree for a crate.
+![Virgo Tree](docs/img/virgo-tree.png)
+
+### 🔥 Discovering Trending Crates
+Find trending crates on crates.io.
+![Virgo Trending](docs/img/virgo-trending.png)
+
+### 🔄 Updating Crates
+Update a dependency to the latest stable version.
+![Virgo Update](docs/img/virgo-update.png)
+
+### 📦 Viewing Available Versions
+Display all available versions of a crate.
+![Virgo Versions](docs/img/virgo-versions.png)
+
+
+---
+
+## <a id="commands-overview"></a> 🛠️ Commands Overview
+
+### 🔍 Search & Information
 
 ```vim
-:virgo search    " Search for a crate on crates.io  
-:virgo stats     " Display the stats of a crate  
-:virgo info      " Displays detailed info of a crate  
-:virgo versions  " Displays all available versions of a crate  
-:virgo trending  " Displays trending crates  
+:virgo search" Search for a crate on crates.io
+:virgo stats " Display the stats of a crate
+:virgo info" Displays detailed info of a crate
+:virgo versions" Displays all available versions of a crate
+:virgo trending" Displays trending crates
 ```
 
-### 🛠 Dependency Management  
+### 🛠 Dependency Management
 
 ```vim
-:virgo add       " Adds selected crate  
-:virgo remove    " Removes selected crate  
-:virgo update    " Updates selected dependency  
-:virgo rollback  " Rolls back to a previous version  
-:virgo compare   " Compares bleeding-edge with latest stable version of a selected crate  
-:virgo depends   " Displays all the dependencies of a selected crate  
+:virgo add " Adds selected crate
+:virgo remove" Removes selected crate
+:virgo update" Updates selected dependency
+:virgo rollback" Rolls back to a previous version
+:virgo compare " Compares bleeding-edge with latest stable version of a selected crate
+:virgo depends " Displays all the dependencies of a selected crate
 ```
 
 ### 📜 Project & Cargo.toml Handling 
 
 ```vim
-:virgo all       " Displays all installed dependencies in Cargo.toml  
-:virgo health    " Checks current Cargo.toml for overall health  
-:virgo breaking  " Analyzes Cargo.toml for breaking changes  
-:virgo lockfile  " Inspects Cargo.lock for precise version tracking  
-:virgo changelog " View changelog for a selected crate (Filter by major, minor, patch, since x.x.x & more)  
-:virgo tree      " Display a tree of dependencies for a crate  
-:virgo init      " Creates a basic Cargo.toml in the current dir  
-:virgo edit      " Edit Name, Version, and Edition in the current Cargo.toml   
+:virgo all " Displays all installed dependencies in Cargo.toml
+:virgo health" Checks current Cargo.toml for overall health
+:virgo breaking" Analyzes Cargo.toml for breaking changes
+:virgo lockfile" Inspects Cargo.lock for precise version tracking
+:virgo changelog " View changelog for a selected crate (Filter by major, minor, patch, since x.x.x & more)
+:virgo tree" Display a tree of dependencies for a crate
+:virgo init" Creates a basic Cargo.toml in the current dir
+:virgo edit" Edit Name, Version, and Edition in the current Cargo.toml 
 ```
 
-### 🔄 Backup & Restore  
+### 🔄 Backup & Restore
 
 ``` vim
-:virgo backup    " Backup Cargo.toml  
-:virgo restore   " Restore Cargo.toml from latest backup  
+:virgo backup" Backup Cargo.toml
+:virgo restore " Restore Cargo.toml from latest backup
 ```
 
-### 📚 Documentation & Help  
+### 📚 Documentation & Help
 
 ```vim
-:virgo docs "View documentation for a selected crate, use -o to open in docs.rs, or -e to view examples in vim.
-:virgo help "Print this message or the help of the given subcommand(s)  
-:virgo about "Display information about Virgo  
+:virgo docs "View documentation for a selected crate, use -o to open in docs.rs or -e to view examples
+:virgo help "Print this message or the help of the given subcommand(s)
+:virgo about "Display information about Virgo
 ```
 
 ---
 
-## 🚀 Installation  
+## <a id="installation"></a> 🚀 Installation
 
-### **With vim-plug**  
+### **With vim-plug**
 
 Add this to your Vim configuration (`~/.vimrc` or `~/.config/nvim/init.vim`):
 ```vim
 Plug 'dntstck/virgo'
 ```
-Then run:  
+Then run:
 ```vim
 :PlugInstall
 ```
 
-### **With Vundle**  
+### **With Vundle**
 
-Add this to your `.vimrc`:  
+Add this to your `.vimrc`:
 ```vim
 Plugin 'dntstck/virgo'
 ```
-Then install it with:  
+Then install it with:
 ```vim
 :PluginInstall
 ```
 
-### **With Pathogen**  
+### **With Pathogen**
 
-Clone the repo into your Vim bundle directory:  
+Clone the repo into your Vim bundle directory:
 ```bash
 git clone https://github.com/dntstck/virgo-vim ~/.vim/bundle/virgo-vim
 ```
 
 ---
 
-## 🛠️ Troubleshooting  
+## <a id="troubleshooting"></a> 🛠️ Troubleshooting
 
-### **Common Issues**  
+### **Common Issues**
 
-**Permission Denied?**  
+**Permission Denied?**
  
 ```bash
 chmod +x ~/.vim/bundle/virgo/bin/virgo
 ```
 
-**Cargo.lock Conflicts?**  
+**Cargo.lock Conflicts?**
 
 ```bash
 cargo generate-lockfile
