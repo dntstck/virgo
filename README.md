@@ -61,92 +61,92 @@ Displays all currently installed dependencies in Cargo.toml.  <br>
 ![Virgo All](docs/img/virgo-all.png)  <br>
 
 ### 🔄 Creating a Backup
-Secure your Cargo.toml before making changes.
-![Virgo Backup](docs/img/virgo-backup.png)
+Secure your Cargo.toml before making changes. <br>
+![Virgo Backup](docs/img/virgo-backup.png) <br>
 
 ### ⚠️ Detecting Breaking Changes
-Analyze Cargo.toml for potential breaking updates.
-![Virgo Breaking](docs/img/virgo-breaking.png)
+Analyze Cargo.toml for potential breaking updates. <br>
+![Virgo Breaking](docs/img/virgo-breaking.png) <br>
 
 ### 📜 Viewing Changelog Entries
-Filter changelogs by major, minor, patch, or version.
-![Virgo Changelog](docs/img/virgo-changelog.png)
+Filter changelogs by major, minor, patch, or version. <br>
+![Virgo Changelog](docs/img/virgo-changelog.png) <br>
 
 ### 🔍 Comparing Versions
-Instantly compare bleeding-edge with latest stable.
-![Virgo Compare](docs/img/virgo-compare.png)
+Instantly compare bleeding-edge with latest stable. <br>
+![Virgo Compare](docs/img/virgo-compare.png) <br>
 
 ### 🔗 Inspecting Dependencies
-Display dependencies of a selected crate.
-![Virgo Depends](docs/img/virgo-depends.png)
+Display dependencies of a selected crate. <br>
+![Virgo Depends](docs/img/virgo-depends.png) <br>
 
 ### 📚 Viewing Documentation & Examples
-Quickly fetch crate documentation and code examples.
-![Virgo Docs](docs/img/virgo-docs.png)
+Quickly fetch crate documentation and code examples. <br>
+![Virgo Docs](docs/img/virgo-docs.png) <br>
 
 ### 🔎 Viewing Examples
-Displays example snippets for a selected crate.
-![Virgo Docs - Examples](docs/img/virgo-docs-ex.png)
+Displays example snippets for a selected crate. <br>
+![Virgo Docs - Examples](docs/img/virgo-docs-ex.png) <br>
 
 ### 🌐 Opening Docs.rs
-Open crate documentation directly in a browser.
-![Virgo Docs - Open](docs/img/virgo-docs-o.png)
+Open crate documentation directly in a browser. <br>
+![Virgo Docs - Open](docs/img/virgo-docs-o.png) <br>
 
 ### ✏️ Editing Cargo.toml
-Modify Name, Version, and Edition in Cargo.toml.
-![Virgo Edit](docs/img/virgo-edit.png)
+Modify Name, Version, and Edition in Cargo.toml. <br>
+![Virgo Edit](docs/img/virgo-edit.png) <br>
 
 ### ✅ Checking Cargo.toml Health
-Verify the integrity and structure of Cargo.toml.
-![Virgo Health](docs/img/virgo-health.png)
+Verify the integrity and structure of Cargo.toml. <br>
+![Virgo Health](docs/img/virgo-health.png) <br>
 
 ### ℹ️ Viewing Crate Info
-Display detailed information about a crate.
-![Virgo Info](docs/img/virgo-info.png)
+Display detailed information about a crate. <br>
+![Virgo Info](docs/img/virgo-info.png) <br>
 
 ### 🔑 Inspecting Cargo.lock
-Track precise crate versions in Cargo.lock.
-![Virgo Lockfile](docs/img/virgo-lockfile.png)
+Track precise crate versions in Cargo.lock. <br>
+![Virgo Lockfile](docs/img/virgo-lockfile.png) <br>
 
 ### ⚠️ Checking Outdated Dependencies
-Identify outdated dependencies without Cargo.
-![Virgo Outdated](docs/img/virgo-outdated.png)
+Identify outdated dependencies without Cargo. <br>
+![Virgo Outdated](docs/img/virgo-outdated.png) <br>
 
 ### ❌ Removing Crates
-Easily remove a selected crate.
-![Virgo Remove](docs/img/virgo-remove.png)
+Easily remove a selected crate. <br>
+![Virgo Remove](docs/img/virgo-remove.png) <br>
 
 ### 🔄 Restoring a Backup
-Revert Cargo.toml to a previous backup.
-![Virgo Restore](docs/img/virgo-restore.png)
+Revert Cargo.toml to a previous backup. <br>
+![Virgo Restore](docs/img/virgo-restore.png) <br>
 
 ### ⏪ Rolling Back Versions
-Roll back crates to a previous version.
-![Virgo Rollback](docs/img/virgo-rollback.png)
+Roll back crates to a previous version. <br>
+![Virgo Rollback](docs/img/virgo-rollback.png) <br>
 
 ### 🔎 Searching for Crates
-Find dependencies with blazing-fast lookup.
-![Virgo Search](docs/img/virgo-search.png)
+Find dependencies with blazing-fast lookup. <br>
+![Virgo Search](docs/img/virgo-search.png) <br>
 
 ### 📊 Viewing Crate Stats
-Display download counts, ratings, and more.
-![Virgo Stats](docs/img/virgo-stats.png)
+Display download counts, ratings, and more. <br>
+![Virgo Stats](docs/img/virgo-stats.png) <br>
 
 ### 🌳 Viewing Dependency Tree
-Display a structured dependency tree for a crate.
-![Virgo Tree](docs/img/virgo-tree.png)
+Display a structured dependency tree for a crate. <br>
+![Virgo Tree](docs/img/virgo-tree.png) <br>
 
 ### 🔥 Discovering Trending Crates
-Find trending crates on crates.io.
-![Virgo Trending](docs/img/virgo-trending.png)
+Find trending crates on crates.io. <br>
+![Virgo Trending](docs/img/virgo-trending.png) <br>
 
 ### 🔄 Updating Crates
-Update a dependency to the latest stable version.
-![Virgo Update](docs/img/virgo-update.png)
+Update a dependency to the latest stable version. <br>
+![Virgo Update](docs/img/virgo-update.png) <br>
 
 ### 📦 Viewing Available Versions
-Display all available versions of a crate.
-![Virgo Versions](docs/img/virgo-versions.png)
+Display all available versions of a crate. <br>
+![Virgo Versions](docs/img/virgo-versions.png) <br>
 
 
 ---
