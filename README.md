@@ -5,7 +5,7 @@
 **Virgo** (Vi~~m~~ & ~~Ca~~rgo) is a **powerful Vim plugin** designed to simplify **Rust crate management** directly from your editor. Search for crates, manage Cargo.toml, check dependencies,
  manage your lockfile, discover trending crates and explore stats—all without leaving Vim!
 
-🚀 **Currently at v1.3.3!** Virgo continues to evolve, incorporating bug fixes, usability enhancements, and polished features to redefine Rust development.
+🚀 **Currently at v1.3.4!** Virgo continues to evolve, incorporating bug fixes, usability enhancements, and polished features to redefine Rust development.
 
 ---
 
