@@ -53,12 +53,12 @@
 ## <a id="usage-examples"></a>📸 Usage Examples
 
 ### 🛠 Adding a Crate
-Instantly add crates without leaving Vim.
-![Virgo Add](docs/img/virgo-add.png)
+Instantly add crates without leaving Vim.<br>
+![Virgo Add](docs/img/virgo-add.png) <br>
 
 ### 🔍 Viewing Installed Crates
-Displays all currently installed dependencies in Cargo.toml.
-![Virgo All](docs/img/virgo-all.png)
+Displays all currently installed dependencies in Cargo.toml.  <br>
+![Virgo All](docs/img/virgo-all.png)  <br>
 
 ### 🔄 Creating a Backup
 Secure your Cargo.toml before making changes.
