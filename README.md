@@ -6,9 +6,9 @@
 <img src="/docs/virgo-logo.png"></img>
 </p>
 
-Virgo (Vim & Cargo) is an autonomous Rust crate management system, seamlessly integrated into Vim. Search for crates, update Cargo.toml, track dependencies, manage your lockfile, explore trending crates, access documentation, and extract examples from docs.rs - all without ever leaving Vim!
+Virgo (Vim & Cargo) is an autonomous Rust crate management system, seamlessly integrated into Vim. Search for crates, manage crate features, update Cargo.toml, track dependencies, manage your lockfile, explore trending crates, access documentation, and extract examples from docs.rs and so much more - all without ever leaving Vim!
 
-🚀 **Currently at v1.3.4!** Virgo continues to evolve, incorporating bug fixes, usability enhancements, and polished features to redefine Rust development.
+🚀 **Currently at v1.3.5!**
 
 ---
 
@@ -23,6 +23,7 @@ Virgo (Vim & Cargo) is an autonomous Rust crate management system, seamlessly in
 ---
 ## <a id="features"></a> 🔥 Features
 ✅ **Crate Management** – Search, add, remove, update, and rollback Rust crates effortlessly.<br>
+✅ **Feature Orchestration** – Add and remove crate features on the fly.<br>
 ✅ **Native Vim Compatibility** – Seamlessly integrates with Vim using intuitive `:virgo` commands.<br>
 ✅ **Blazing Fast Performance** – Built in Rust for maximum speed and efficiency.<br>
 ✅ **Fully Automated** – No manual edits needed; Virgo takes care of `Cargo.toml` for you.<br>
@@ -41,16 +42,12 @@ Virgo (Vim & Cargo) is an autonomous Rust crate management system, seamlessly in
 
 ---
 
-## <a id="whats-new"></a>🚀 What's New - v1.3.4
+## <a id="whats-new"></a>🚀 What's New - v1.3.5
 
- **Auto-select latest stable** – `:virgo add <crate>` defaults to the latest stable version <br>
- **Extended `:virgo docs`** – Now grabs examples and usage snippets from docs.rs <br>
- **Added flags `:virgo docs -e`** – view crate examples in the gutter using -e<br> 
- **Added flags `:virgo docs -o`** – open crate documentation directly in your browser using -o<br>
- **Standalone `outdated` command** – No longer relies on Cargo, making it more reliable<br>
- **Smarter `updatecrate`** – Handles crates with `{ features: [...] }` properly<br>
- **Enhanced changelog filtering** – Supports major, minor, patch, and version-based filtering<br>
-
+ **UI Improvements** – Displaying crates, versions and features is more refined. <br>
+ **Added flags `:virgo add <crate> -f <feature>`** – Add a crates feature with -f<br> 
+ **Added flags `:virgo remove <crate> -f <feature>`** – Remove a crates feature with -f<br>
+ 
 ---
 
 ## <a id="installation"></a> 🚀 Installation
