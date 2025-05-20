@@ -1,7 +1,7 @@
 
-<p align="center">
-# **Virgo ♍︎** <br> ** Autonomous Rust Crate Management for Vim 🦀**
 
+# **Virgo ♍︎ Autonomous Rust Crate Management for Vim 🦀**
+<p align="center">
 <img src="/docs/virgo-logo.png"></img>
 </p>
 
