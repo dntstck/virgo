@@ -1,5 +1,3 @@
-
-
 <h1>Virgo ♍︎</h1>
 <h2> Autonomous Rust Crate Management for Vim 🦀</h2>
 <p align="center">
