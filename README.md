@@ -1,5 +1,5 @@
 
-<h1>Virgo ♍︎ -Rust Crate Management for Vim 🦀</h1>
+<h1>Virgo ♍︎ Rust Crate Management for Vim 🦀</h1>
 
 <p align="center">
 <img src="/docs/virgo-logo.png"></img>
