@@ -57,7 +57,7 @@ Virgo is a feature-rich Vim plugin & CLI tool specifically designed for managing
 
 ### `:virgo search`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴ <br>
 Search for a crate on [crates.io](https://crates.io). This command queries the crates registry based on your search term and returns matching crates in a concise list.
 
 ⠗ **Usage**
@@ -84,7 +84,7 @@ This searches for crates related to "serde" and returns potential matches along 
 
 ### `:virgo stats`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴<br>
 Display various statistics for a specified crate, such as download count, recent version activity, and rating (if available).
 
 ⠗ **Usage:**
@@ -108,7 +108,7 @@ Display various statistics for a specified crate, such as download count, recent
 
 ### `:virgo info`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴ <br>
 Show detailed information for a crate including description, repository link, dependencies, and maintainers.
 
 ⠗ **Usage:**
@@ -132,7 +132,7 @@ Show detailed information for a crate including description, repository link, de
 
 ### `:virgo versions`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴ <br>
 Display all available versions of a specified crate from crates.io.
 
 ⠗ **Usage:**
@@ -156,7 +156,7 @@ Display all available versions of a specified crate from crates.io.
 
 ### `:virgo trending`
 
-⠋ **Overview*** ⠴
+⠋ **Overview*** ⠴ <br>
 Lists the trending crates on crates.io based on current activity and downloads.
 
 ⠗ **Usage:**
@@ -179,7 +179,7 @@ Simply run the command to see what’s hot in the Rust community. 🔥
 
 ### `:virgo add`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴ <br>
 Add a selected crate to your Cargo.toml dependencies. This command supports additional flags like `-f` to enable specific features during installation.
 
 ⠗ **Usage:**
@@ -205,7 +205,7 @@ This command installs the `serde` crate and immediately enables the `derive` fea
 
 ### `:virgo remove`
 
-⠋ **Overview*** ⠴
+⠋ **Overview*** ⠴ <br>
 Remove an existing crate from your Cargo.toml dependencies.
 
 ⠗ **Usage:**
@@ -229,7 +229,7 @@ Remove an existing crate from your Cargo.toml dependencies.
 
 ### `:virgo update`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴ <br>
 Update a specified dependency to its latest version, ensuring your project uses the most recent improvements and bug fixes.
 
 ⠗ **Usage:**
@@ -253,7 +253,7 @@ Update a specified dependency to its latest version, ensuring your project uses 
 
 ### `:virgo rollback`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴ <br>
 Roll back a dependency to a previous version if the latest update introduces issues or incompatibilities.
 
 ⠗ **Usage:**
@@ -277,7 +277,7 @@ Roll back a dependency to a previous version if the latest update introduces iss
 
 ### `:virgo compare`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴ <br>
 Compare the bleeding-edge version of a crate with its latest stable version. This assists in understanding new changes and potential risks before updating.
 
 ⠗ **Usage:**
@@ -301,7 +301,7 @@ Compare the bleeding-edge version of a crate with its latest stable version. Thi
 
 ### `:virgo depends`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴ <br>
 Display all the dependencies of a selected crate. This command can be very insightful when evaluating a crate’s internal structure and external requirements.
 
 ⠗ **Usage:**
@@ -327,7 +327,7 @@ Display all the dependencies of a selected crate. This command can be very insig
 
 ### `:virgo all`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴ <br>
 List all the installed dependencies as specified in your Cargo.toml.
 ⠗ **Usage:**
 
@@ -346,7 +346,7 @@ Running this command prints a summary of every dependency along with their curre
 
 ### `:virgo health`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴ <br>
 Perform a comprehensive check of your Cargo.toml for overall health, including misconfigurations and potential version conflicts.
 
 ⠗ **Usage:**
@@ -366,7 +366,7 @@ The output may include warnings for duplicate entries, deprecated syntax, or ver
 
 ### `:virgo breaking`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴ <br>
 Analyze your Cargo.toml to detect breaking changes that might affect your project.
 ⠗ **Usage:**
 
@@ -385,7 +385,7 @@ Use this command to flag potential version-related issues when upgrading multipl
 
 ### `:virgo lockfile`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴ <br>
 Inspect the Cargo.lock file to verify precise version tracking of your project dependencies.
 ⠗ **Usage:**
 
@@ -404,7 +404,7 @@ Review the output to ensure that every dependency is locked to the correct versi
 
 ### `:virgo changelog`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴ <br>
 View the changelog for a selected crate. This command supports filtering by major, minor, patch changes, or even since a specified version.
 
 ⠗ **Usage:**
@@ -428,7 +428,7 @@ View the changelog for a selected crate. This command supports filtering by majo
 
 ### `:virgo tree`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴ <br>
 Display a hierarchical tree of dependencies for a given crate to visualize the relationships between packages.
 
 ⠗ **Usage:**
@@ -452,7 +452,7 @@ Display a hierarchical tree of dependencies for a given crate to visualize the r
 
 ### `:virgo init`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴ <br>
 Initialize a basic Cargo.toml file in the current directory. This command sets up the necessary structure for a new Rust project.
 
 ⠗ **Usage:**
@@ -472,7 +472,7 @@ After running this command, you’ll have a starter Cargo.toml file with default
 
 ### `:virgo edit`
 
-⠋ **Overview*** ⠴
+⠋ **Overview*** ⠴ <br>
 Edit key fields (Name, Version, Edition) within your current Cargo.toml.
 ⠗ **Usage:**
 
@@ -497,7 +497,7 @@ Edit key fields (Name, Version, Edition) within your current Cargo.toml.
 
 ### `:virgo backup`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴ <br>
 Creates a backup of your Cargo.toml file. This ensures that critical project configuration is preserved before major changes.
 
 ⠗ **Usage:**
@@ -518,7 +518,7 @@ Executing this command stores a timestamped copy of Cargo.toml in a designated b
 
 ### `:virgo restore`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴ <br>
 Restores Cargo.toml from the latest backup, making it easy to revert unwanted changes.
 
 ⠗ **Usage:**
@@ -541,7 +541,7 @@ If an update went wrong, simply run this command to roll back to the previously 
 
 ### `:virgo docs`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴ <br>
 View documentation for any selected crate. You can enhance your command with extra flags:
 
 - `-o` — Opens the crate documentation in docs.rs.
@@ -570,7 +570,7 @@ Opens Tokio’s documentation directly in your default browser. 📖
 
 ### `:virgo help`
 
-⠋ **Overview** ⠴
+⠋ **Overview** ⠴ <br>
 Print a comprehensive help message, including usage details for all commands or specific subcommands as needed.
 
 ⠗ **Usage:**
@@ -593,8 +593,8 @@ Print a comprehensive help message, including usage details for all commands or 
 ---
 
 ### `:virgo about`
-
-⠋ **Overview** ⠴
+ 
+⠋ **Overview** ⠴ <br>
 Display information about Virgo itself, including version details, authorship, and license information.
 
 ⠗ **Usage:**
