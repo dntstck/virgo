@@ -34,7 +34,6 @@ Virgo (Vim & Cargo) is a Rust crate management system, seamlessly integrated int
 ✅ **Rollback Protection** – Easily revert changes, maintain stability, and prevent unintended updates.<br>
 ✅ **Compare Versions** – Instantly compare bleeding-edge vs latest stable versions.<br>
 ✅ **Docs Lookup** – Fetch crate documentation and examples directly from **docs.rs**.<br>
-✅ **Standalone Outdated Check** – Identify outdated dependencies **without relying on Cargo**.<br>
 ✅ **Complete Cargo.toml Management** – Health checks, edits, structured initialization, and validation.<br>
 
 ---
