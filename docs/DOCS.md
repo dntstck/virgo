@@ -18,7 +18,7 @@
 
 ## 📌 Overview
 
-Virgo is a feature-rich Vim plugin & CLI tool specifically designed for managing Rust dependencies and project configurations. Whether you need to search crates.io, manage your Cargo.toml, or inspect the dependency tree, Virgo provides a consistent and efficient interface. With an emphasis on modularity and straightforward commands, Virgo helps you keep your Rust projects in top shape. Written in Rust, for Rust.
+Virgo is a feature-rich Vim plugin & CLI tool specifically designed for managing Rust dependencies and project configurations. Whether you need to search crates.io, add or modify crates quickly, inspect the dependency tree, or view crate docs, Virgo provides a consistent and efficient interface. With an emphasis on modularity and straightforward commands, Virgo helps you simplify Cargo.toml management.
 
 ---
 
