@@ -93,8 +93,8 @@ git clone https://github.com/dntstck/virgo-vim ~/.vim/bundle/virgo-vim
 ### 🛠 Dependency Management
 
 ```vim
-:virgo add " Adds selected crate
-:virgo remove" Removes selected crate
+:virgo add " Adds selected crate, use -f <feature> to add crate features 
+:virgo remove" Removes selected crate, use -f <feature> to remove crate features
 :virgo update" Updates selected dependency
 :virgo rollback" Rolls back to a previous version
 :virgo compare " Compares bleeding-edge with latest stable version of a selected crate
