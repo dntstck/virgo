@@ -7,7 +7,7 @@
 
 Virgo (Vim & Cargo) is a Rust crate management system, seamlessly integrated into Vim. Search for crates, manage crate features, update Cargo.toml, track dependencies, manage your lockfile, explore trending crates, access documentation, extract examples from docs.rs and so much more - all without ever leaving Vim!
 
-🚀 **Currently at v1.3.5!**
+🚀 **Currently at v1.4.0!**
 
 ---
 
@@ -38,11 +38,10 @@ Virgo (Vim & Cargo) is a Rust crate management system, seamlessly integrated int
 
 ---
 
-## <a id="whats-new"></a>🚀 What's New - v1.3.5
+## <a id="whats-new"></a>🚀 What's New - v1.4.0
 
- **UI Improvements** – Displaying crates, versions and features is more refined. <br>
- **Added flags `:virgo add <crate> -f <feature>`** – Add a crates feature with -f<br> 
- **Added flags `:virgo remove <crate> -f <feature>`** – Remove a crates feature with -f<br>
+ **Optimizations** – Added threading to outdated and depends commands which access crates.io concurrently, siginificantly reducing delays<br>
+
  
 ---
 
