@@ -5,7 +5,7 @@
 <img src="/docs/virgo-logo.png"></img>
 </p>
 
-<p align="center">Virgo (Vim & Cargo) is a Rust crate management system, seamlessly integrated into Vim.<br></p>
+<p align="center">Virgo (Vi~~m~~ & ~~Ca~~rgo) is a Rust crate management system, seamlessly integrated into Vim.<br></p>
 
 
 ---
