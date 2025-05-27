@@ -5,9 +5,9 @@
 <img src="/docs/virgo-logo.png"></img>
 </p>
 
-Virgo (Vim & Cargo) is a Rust crate management system, seamlessly integrated into Vim.<br>
+<p align="center">Virgo (Vim & Cargo) is a Rust crate management system, seamlessly integrated into Vim.<br>
 
-Manage dependencies, update Cargo.toml, explore trending crates, view crate docs and more - all without leaving your editor.  
+Manage dependencies, update Cargo.toml, explore trending crates, view crate docs and more - all without leaving your editor.</p>
 
 🚀 **Currently at v1.4.0!**
 
