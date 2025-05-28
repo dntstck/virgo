@@ -20,20 +20,20 @@
 
 ---
 ## <a id="features"></a> 🔥 Features
-✅ **Crate Management** – Search, add, remove, update, and rollback Rust crates effortlessly.<br>
-✅ **Feature Orchestration** – Add and remove crate features on the fly.<br>
-✅ **Native Vim Compatibility** – Seamlessly integrates with Vim using intuitive `:virgo` commands.<br>
-✅ **Blazing Fast Performance** – Built in Rust for maximum speed and efficiency.<br>
-✅ **Fully Automated** – No manual edits needed; Virgo takes care of `Cargo.toml` for you.<br>
-✅ **Crate Info** – Discover documentation, stats, and detailed crate info directly in Vim.<br>
-✅ **Backup & Restore** – Secure your `Cargo.toml`, rollback safely, and prevent accidental changes.<br>
-✅ **Visual Feedback** – Enhanced output formatting for structured readability and usability.<br> 
-✅ **Dependency Insights** – Examine dependencies, visualize trees, track updates, and filter changelogs.<br>
-✅ **Breaking Changes** – Analyze `Cargo.toml` for breaking updates before they happen.<br>
-✅ **Rollback Protection** – Easily revert changes, maintain stability, and prevent unintended updates.<br>
-✅ **Compare Versions** – Instantly compare bleeding-edge vs latest stable versions.<br>
-✅ **Docs Lookup** – Fetch crate documentation and examples directly from **docs.rs**.<br>
-✅ **Complete Cargo.toml Management** – Health checks, edits, structured initialization, and validation.<br>
+✅ **Crate Management** - Search, add, remove, update, and rollback Rust crates effortlessly.<br>
+✅ **Feature Orchestration** - Add and remove crate features on the fly.<br>
+✅ **Native Vim Compatibility** - Seamlessly integrates with Vim using intuitive `:virgo` commands.<br>
+✅ **Blazing Fast Performance** - Built in Rust for maximum speed and efficiency.<br>
+✅ **Fully Automated** - No manual edits needed; Virgo takes care of `Cargo.toml` for you.<br>
+✅ **Crate Info** - Discover documentation, stats, and detailed crate info directly in Vim.<br>
+✅ **Backup & Restore** - Secure your `Cargo.toml`, rollback safely, and prevent accidental changes.<br>
+✅ **Visual Feedback** - Enhanced output formatting for structured readability and usability.<br> 
+✅ **Dependency Insights** - Examine dependencies, visualize trees, track updates, and filter changelogs.<br>
+✅ **Breaking Changes** - Analyze `Cargo.toml` for breaking updates before they happen.<br>
+✅ **Rollback Protection** - Easily revert changes, maintain stability, and prevent unintended updates.<br>
+✅ **Compare Versions** - Instantly compare bleeding-edge vs latest stable versions.<br>
+✅ **Docs Lookup** - Fetch crate documentation and examples directly from **docs.rs**.<br>
+✅ **Complete Cargo.toml Management** - Health checks, edits, structured initialization, and validation.<br>
 
 ---
 
