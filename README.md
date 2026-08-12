@@ -278,3 +278,9 @@ Run the install script:
 ```bash
 cargo generate-lockfile
 ```
+
+
+---
+Virgo Plugin Metadata
+Description: Rust crate management for Vim
+Tags: vim-plugin, rust, vundle
